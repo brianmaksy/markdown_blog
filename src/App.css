@@ -1,0 +1,105 @@
+body {
+  color: #222;
+}
+img {
+  max-width: 100%;
+}
+main {
+  padding: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  align-items: center;
+  padding: 10px 90px;
+  max-width: 80%;
+}
+.title {
+  margin-bottom: 20px;
+}
+.notfound {
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+.header-line {
+  width: 85%; /* Adjust width */
+  border: none; /* Remove default border */
+  border-top: 2px solid lightgray; /* Create a top border to act as a line */
+  margin: 10px auto; /* Center the line and add margin */
+}
+header a.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+.layout-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+
+.postTitle,
+.postDetails {
+  width: 40%;
+  color: black;
+}
+
+.aboutPage.h1 {
+  margin-bottom: 40px;
+}
+.aboutPage {
+  width: 80%;
+  padding: 0 90px;
+}
+.post {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+  color: #555;
+}
+.postImage {
+  padding: 20px 0;
+}
+.post div.text.h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.postlist {
+  width: 60%;
+  margin: auto;
+}
+
+div.post p.info a.author {
+  color: #333;
+}
+div.post p.summary {
+  margin: 6px 0;
+  line-height: 1.4rem;
+}
+
+.post-card {
+  text-align: left;
+  font-family: sans-serif;
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+footer {
+  text-align: left;
+  padding: 0 10px;
+}
