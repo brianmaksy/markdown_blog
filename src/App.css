@@ -16,11 +16,12 @@ header {
   margin-top: 20px;
   margin-bottom: 2px;
   align-items: center;
-  padding: 10px 90px;
-  max-width: 80%;
+  padding: 2% 10%;
+  max-width: 90%;
 }
 .title {
   margin-bottom: 20px;
+  text-align: center;
 }
 .notfound {
   text-align: center;
@@ -34,7 +35,6 @@ header a {
   width: 85%; /* Adjust width */
   border: none; /* Remove default border */
   border-top: 2px solid lightgray; /* Create a top border to act as a line */
-  margin: 10px auto; /* Center the line and add margin */
 }
 header a.logo {
   font-weight: bold;
@@ -51,9 +51,10 @@ header nav {
   min-height: 90vh;
 }
 
+
 .postTitle,
 .postDetails {
-  width: 40%;
+  width: 80%;
   color: black;
 }
 
@@ -65,7 +66,7 @@ header nav {
   padding: 0 90px;
 }
 .post {
-  width: 40%;
+  width: 80%;
   margin: auto;
   padding: 10px;
   color: #555;
@@ -75,7 +76,7 @@ header nav {
 }
 .post div.text.h2 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .postlist {
@@ -103,3 +104,20 @@ footer {
   text-align: left;
   padding: 0 10px;
 }
+
+/* Mobile (width up to 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu {
+        display: none; /* Hide navigation menu */
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+

@@ -32,6 +32,7 @@ const getPosts = async () => {
           title: metadata.title ? metadata.title : "No title given",
           author: metadata.author ? metadata.author : "No author given",
           date: metadata.date ? metadata.date : "No date given",
+          tags: metadata.tags? metadata.tags: "No tags given",
           content: content ? content : "No content given",
         };
         postlist.push(post);

@@ -14,10 +14,12 @@ const Post = () => {
   const fetchedPost = {};
   let postExists = false;
   postlist.forEach((post, i) => {
+    const postTags = JSON.parse(post.tags)
     if (Number(id) === post.id) {
       fetchedPost.title = post.title ? post.title : "No title given";
       fetchedPost.date = post.date ? post.date : "No date given";
       fetchedPost.author = post.author ? post.author : "No author given";
+      fetchedPost.tags = post.tags ? post.tags : "No tags given";
       fetchedPost.content = post.content ? post.content : "No content given";
       postExists = true;
     }
@@ -31,7 +33,10 @@ const Post = () => {
         <h2 className="postTitle">{fetchedPost.title}</h2>
         <small className="postDetails">
           Published on {fetchedPost.date} by {fetchedPost.author}
+          <br/>
+          Tags: {fetchedPost.tags}
         </small>
+        <p></p>
         <hr />
         <ReactMarkdown
           rehypePlugins={[rehypeRaw]}

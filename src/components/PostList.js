@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
@@ -8,9 +8,16 @@ const PostList = () => {
   const excerptList = postlist.map((post) => {
     return post.content.split(" ").slice(0, 20).join(" ") + "...";
   });
+  const [selectedTag, setSelectedTag] = useState(null);
+
+  // Filter posts by tag
+  // const filteredPosts = selectedTag  ? postlist.filter((post) => post.tags.includes(selectedTag)) :postlist;
+
   return (
     <div className="postlist">
+
       <h1 className="title">All Posts</h1>
+
       {postlist.length &&
         postlist.map((post, i) => {
           return (
@@ -22,6 +29,8 @@ const PostList = () => {
               </h2>
               <small>
                 Published on {post.date} by {post.author}
+                <br />
+                Tags: {post.tags}
               </small>
               <hr />
               <ReactMarkdown
